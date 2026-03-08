@@ -10,4 +10,7 @@ public class Student {
         return studentName;
     }
 
+    public void setStudentName(String name) {
+        studentName = name;
+    }
 }
