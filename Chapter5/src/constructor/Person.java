@@ -5,6 +5,9 @@ public class Person {
     float height;
     float weight;
 
+    public Person() {
+    }
+
     public Person(String name) {
         this.name = name;
     }
