@@ -1,4 +1,4 @@
-package exercise;
+package exercise.q06;
 
 public class MyDateTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package exercise;
+package exercise.q07;
 
 /**
  * Q07.
