@@ -2,8 +2,8 @@ package staticex;
 
 public class Student1 {
     static int serialNum = 1000;
-    private int studentID;
-    private String studentName;
+    int studentID;
+    String studentName;
     private int grade;
     private String address;
 
