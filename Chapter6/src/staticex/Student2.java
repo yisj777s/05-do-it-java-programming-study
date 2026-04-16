@@ -24,10 +24,6 @@ public class Student2 {
         return serialNum;
     }
 
-    public static int gettSerialNum() {
-        return serialNum;
-    }
-
     public static void setSerialNum(int serialNum) {
         Student2.serialNum = serialNum;
     }
