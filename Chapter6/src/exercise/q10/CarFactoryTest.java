@@ -1,0 +1,12 @@
+package exercise.q10;
+
+public class CarFactoryTest {
+    public static void main(String[] args) {
+        CarFactory carFactory = CarFactory.getInstance();
+        Car mySonata = carFactory.createCar();
+        Car yourSonata = carFactory.createCar();
+
+        System.out.println(mySonata.getCarNumber());
+        System.out.println(yourSonata.getCarNumber());
+    }
+}
