@@ -1,0 +1,15 @@
+package exercise.q09;
+
+public class Student {
+    private int studentId;
+    private String name;
+
+    public Student(int studentId, String name) {
+        this.studentId = studentId;
+        this.name = name;
+    }
+
+    public void showStudentInfo() {
+        System.out.println(studentId + ", " + name);
+    }
+}
