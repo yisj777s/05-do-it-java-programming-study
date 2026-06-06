@@ -1,12 +1,6 @@
 package inheritance;
 
-public class VIPCustomer {
-    private int customerId;
-    private String customerName;
-    private String customerGrade;
-    private int bonusPoint;
-    private double bonusRatio;
-
+public class VIPCustomer extends Customer {
     private int agentId;
     private double saleRatio;
 
@@ -16,17 +10,7 @@ public class VIPCustomer {
         saleRatio = 0.1;
     }
 
-    public int calculatePrice(int price) {
-        bonusPoint += price * bonusRatio;
-        int discount = (int) Math.round(price * saleRatio);
-        return price - discount;
-    }
-
     public int getAgentId() {
         return agentId;
-    }
-
-    public String showCustomerInfo() {
-        return customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
     }
 }
