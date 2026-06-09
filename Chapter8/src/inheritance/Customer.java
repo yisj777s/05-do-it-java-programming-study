@@ -12,15 +12,6 @@ public class Customer {
         bonusRatio = 0.01;
     }
 
-    public int calculatePrice(int price) {
-        bonusPoint += price * bonusRatio;
-        return price;
-    }
-
-    public String showCustomerInfo() {
-        return customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
-    }
-
     public int getCustomerId() {
         return customerId;
     }
@@ -43,5 +34,14 @@ public class Customer {
 
     public void setCustomerGrade(String customerGrade) {
         this.customerGrade = customerGrade;
+    }
+
+    public int calculatePrice(int price) {
+        bonusPoint += price * bonusRatio;
+        return price;
+    }
+
+    public String showCustomerInfo() {
+        return customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
     }
 }
