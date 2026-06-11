@@ -7,11 +7,11 @@ public class Customer {
     protected int bonusPoint;
     protected double bonusRatio;
 
-    public Customer() {
-        customerGrade = "SILVER";
-        bonusRatio = 0.01;
-        System.out.println("Customer() 생성자 호출");
-    }
+//    public Customer() {
+//        customerGrade = "SILVER";
+//        bonusRatio = 0.01;
+//        System.out.println("Customer() 생성자 호출");
+//    }
 
     public Customer(int customerId, String customerName) {
         this.customerId = customerId;
