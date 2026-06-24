@@ -4,8 +4,8 @@ public class Customer {
     protected int customerId;
     protected String customerName;
     protected String customerGrade;
-    int bonusPoint;
-    double bonusRatio;
+    protected int bonusPoint;
+    protected double bonusRate;
 
     public Customer() {
         initializeCustomer();
@@ -19,11 +19,11 @@ public class Customer {
 
     private void initializeCustomer() {
         customerGrade = "SILVER";
-        bonusRatio = 0.01;
+        bonusRate = 0.01;
     }
 
     public int calculatePrice(int price) {
-        bonusPoint += price * bonusRatio;
+        bonusPoint += price * bonusRate;
         return price;
     }
 
