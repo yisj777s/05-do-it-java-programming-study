@@ -12,11 +12,13 @@ public class VIPCustomer extends Customer {
         this.agentId = agentId;
     }
 
+    @Override
     public int calculatePrice(int price) {
         bonusPoint += price * bonusRate;
         return price - (int) (price * discountRate);
     }
 
+    @Override
     public String getCustomerInfo() {
         return super.getCustomerInfo() + "담당 상담원 아이디는 " + agentId + "입니다.";
     }
