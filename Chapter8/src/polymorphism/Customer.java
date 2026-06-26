@@ -51,6 +51,10 @@ public class Customer {
         this.customerGrade = customerGrade;
     }
 
+    public int getCustomerBonusPoint() {
+        return bonusPoint;
+    }
+
     private void initializeCustomer() {
         customerGrade = "SILVER";
         bonusRate = 0.01;
