@@ -7,7 +7,7 @@ public class Constant {
     public static void main(String[] args) {
         Constant constant = new Constant();
         constant.num = 50;
-        constant.NUM = 200; // 오류
+//        constant.NUM = 200; // 오류
 
         System.out.println(constant.num);
         System.out.println(constant.NUM);
