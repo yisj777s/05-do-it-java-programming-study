@@ -13,6 +13,7 @@ public class CarTest {
         carList.add(new Genesis());
         for (Car car : carList) {
             car.run();
+            car.washCar();
             System.out.println("====================");
         }
     }
