@@ -15,4 +15,8 @@ public abstract class Car {
         stop();
         turnoff();
     }
+
+    public void washCar() {
+        System.out.println("세차를 합니다.");
+    }
 }
