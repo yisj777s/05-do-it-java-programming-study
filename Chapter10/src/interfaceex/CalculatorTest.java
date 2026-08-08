@@ -11,5 +11,6 @@ public class CalculatorTest {
         System.out.println(calculator.multiply(num1, num2));
         System.out.println(calculator.divide(num1, num2));
         calculator.showInfo();
+        calculator.description();
     }
 }
