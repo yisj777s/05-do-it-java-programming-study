@@ -12,5 +12,8 @@ public class CalculatorTest {
         System.out.println(calculator.divide(num1, num2));
         calculator.showInfo();
         calculator.description();
+
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(Calculator.total(arr));
     }
 }
