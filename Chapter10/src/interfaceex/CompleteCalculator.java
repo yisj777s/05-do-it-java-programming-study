@@ -15,6 +15,11 @@ public class CompleteCalculator extends CalculatorImpl {
         }
     }
 
+    @Override
+    public void description() {
+        System.out.println("재정의 - 정수 계산기를 구현합니다.");
+    }
+
     public void showInfo() {
         System.out.println("Calculator 인터페이스를 구현하였습니다.");
     }
