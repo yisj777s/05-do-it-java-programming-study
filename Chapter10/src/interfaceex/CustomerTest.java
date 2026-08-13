@@ -17,5 +17,6 @@ public class CustomerTest {
             customer2.buy();
             customer2.sell();
         }
+        customer.order();
     }
 }

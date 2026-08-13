@@ -8,7 +8,8 @@ public class Customer implements Buy, Sell {
 
     @Override
     public void order() {
-        Sell.super.order();
+//        Buy.super.order();
+        System.out.println("고객 판매 주문");
     }
 
     @Override
