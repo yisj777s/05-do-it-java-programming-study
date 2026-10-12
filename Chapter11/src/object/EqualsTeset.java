@@ -13,13 +13,25 @@ class Student {
     public String toString() {
         return studentId + "," + studentName;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Student) {
+            Student std = (Student) obj;
+            if (this.studentId == std.studentId)
+                return true;
+            else return false;
+        }
+        return false;
+    }
+
 }
 
 public class EqualsTeset {
     public static void main(String[] args) {
         Student studentLee = new Student(100, "이상원");
         Student studentLee2 = studentLee; // 참조값 복사
-        Student studentSang = new Student(200, "이상원");
+        Student studentSang = new Student(100, "이상원");
 
         if (studentLee == studentLee2) {
             System.out.println("studentLee와 studentLee2의 참조값은 같습니다.");
