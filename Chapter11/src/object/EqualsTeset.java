@@ -25,6 +25,10 @@ class Student {
         return false;
     }
 
+    @Override
+    public int hashCode() {
+        return studentId;
+    }
 }
 
 public class EqualsTeset {
@@ -56,6 +60,11 @@ public class EqualsTeset {
         } else {
             System.out.println("studentLee와 studentSang은 동등하지 않습니다.");
         }
+
+        System.out.println("studentLee의 hashCode: " + studentLee.hashCode());
+        System.out.println("studentSang의 hashCode: " + studentSang.hashCode());
+        System.out.println("studentLee의 객체 식별 해시 코드: " + System.identityHashCode(studentLee));
+        System.out.println("studentSang의 객체 식별 해시 코드: " + System.identityHashCode(studentSang));
     }
 }
 
