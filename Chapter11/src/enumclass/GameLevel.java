@@ -20,4 +20,11 @@ public enum GameLevel {
     public String getHint() {
         return hint;
     }
+
+    public static void main(String[] args) {
+        GameLevel[] gameLevels = GameLevel.values();
+        for (GameLevel level : gameLevels) {
+            System.out.println(level);
+        }
+    }
 }
