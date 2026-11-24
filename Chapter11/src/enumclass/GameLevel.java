@@ -21,6 +21,11 @@ public enum GameLevel {
         return hint;
     }
 
+    @Override
+    public String toString() {
+        return getHint();
+    }
+
     public static void main(String[] args) {
         GameLevel[] gameLevels = GameLevel.values();
         for (GameLevel level : gameLevels) {
