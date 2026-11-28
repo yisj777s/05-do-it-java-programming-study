@@ -38,10 +38,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id = " + id +
-                ", name = '" + name +
-                "'}";
+        return "Student[" +
+                "id=" + id +
+                ", name=" + name + "]";
     }
 
     public static void main(String[] args) {
